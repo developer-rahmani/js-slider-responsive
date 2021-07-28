@@ -1,0 +1,125 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.Sliders {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.Sliders .itemSlider {
+  height: 0;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.Sliders .itemSlider img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.Sliders .itemSlider:not(.Active) {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.Sliders .buttonsSlider .next {
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(100, 100, 100, 0.5);
+  border-radius: 100px;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+.Sliders .buttonsSlider .next:hover {
+  -webkit-transform: translateY(-50%) scale(1.1, 1.1);
+          transform: translateY(-50%) scale(1.1, 1.1);
+}
+
+.Sliders .buttonsSlider .prev {
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(100, 100, 100, 0.5);
+  border-radius: 100px;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+.Sliders .buttonsSlider .prev:hover {
+  -webkit-transform: translateY(-50%) scale(1.1, 1.1);
+          transform: translateY(-50%) scale(1.1, 1.1);
+}
+
+.dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.dots .dot {
+  width: 15px;
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 100px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dots .dot:not(.ActiveDot) {
+  background-color: #fff;
+}
+
+.Active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ActiveDot {
+  background-color: #3ab381;
+}
+/*# sourceMappingURL=app.css.map */
